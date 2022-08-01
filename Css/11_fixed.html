@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>11_fixed.html</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* absoulte  문성영역 기준 (일다은 body영역을 기준)
+            fixed 화면영역 기준     (브라우저를 기준으로) 예) 위로, 아래로, 퀴메뉴 등
+        */
+        
+        
+        
+        /*1)*/
+        /*#s1 ul {background-color: yellow;}
+        #s1 li:nth-child(1) {background : red;}
+        #s1 li:nth-child(2) {background : green;
+                            --position: absolute;
+                            --position: relative;
+                            position: fixed;                            
+                            left: 100px;
+                            top: 100px;}  
+        #s1 li:nth-child(3) {background : blue;}*/
+    
+        /*2) 화면 하단에 고정*/
+       /* #s1 ul {background-color: yellow;}
+        #s1 li:nth-child(1) {background : red;}
+        #s1 li:nth-child(2) {background : green;
+                            position: fixed;
+                            bottom: 0;
+                            height: 80px;
+                            width: 100%;   
+                            }
+        #s1 li:nth-child(3) {background : blue;}*/
+
+
+        /*3) 부모포지션 지정, 브라우저 화면을 기준으로 보기때문에 어떠한 부모에게도 충족되지 않음 */                    
+        #s1 ul {background-color: yellow; position: relative; height: 300px;}
+        #s1 li:nth-child(1) {background : red;}
+        #s1 li:nth-child(2) {background : green;
+                            position: fixed;
+                            bottom: 0;
+                            height: 80px;
+                            width: 100%;   
+                            }
+        #s1 li:nth-child(3) {background : blue;}
+
+
+                          
+    </style>
+    </head>
+
+  <body>
+    
+    <section id="s1">
+        <h1>position:fixed</h1>
+        <ul>
+            <li>개나리</li>
+            <li>진달래</li>
+            <li>라일락</li>
+        </ul>
+    </section>
+
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p> 
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p> 
+            <p>KOREA</p> 
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p> 
+            <p>KOREA</p> 
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p>
+            <p>KOREA</p> 
+            <p>KOREA</p>
+           <p>근데 그거암?</p>
+           <p>이게 공무원 공부보단 쉬움 ㅋ</p>
+           <p>솔직히 기공보다도 쉬울듯</p>
+          
+                          
+          
+  </body>
+</html>
