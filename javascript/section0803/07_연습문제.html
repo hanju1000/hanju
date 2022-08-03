@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>07_연습문제.html</title>
+
+  
+  </head>
+  <body> 
+
+    <h3>연습문제</h3>
+
+    <script>
+        //문1) 임의의 정수가 짝수인지 확인하시오
+        let a=4;
+        document.write(a%2==0);
+                //     4%2
+                //     0  ==0
+        document.write("<hr>");
+        //2로 나누어서 나머지가 1과 같지않아도 짝수
+        let b=4;
+        document.write(b%2!=1);
+                //     4%2
+                //      0   !=1
+        document.write("<hr>");
+    
+
+        //문2) 임의의 정수가 3의 배수인지 확인하시오                    
+        let c=18;
+        document.write(c%3==0);
+        document.write("<hr>");
+                //     18%3
+                //      0   ==0
+        
+        //문3) 임의의 정수가 4의 배수인지 확인하시오
+        let d=4;
+        document.write(d%4==0);
+        document.write("<hr>");
+
+        
+        //문4) 해당 년도가 윤년인지 확인하시오            
+        //-> 윤년 : 4년마다 한번씩 2월 29일이 속해 있는 년도
+        let year=2022;
+        document.write(year%3==0);
+        document.write("<hr>");
+        
+        //문5) 임의의 정수가 2의 배수이면서 5의 배수인지 확인하시오 
+        let e=5;
+        document.write(d%5==0   &&   d%5==0) 
+                //     5%2           5%5==0
+                //     1    ==0     0   ==0
+                //     false        true
+                //     false                                            
+        document.write("<hr>");
+        
+        //문6) 임의의 정수가 1 또는 3인지 확인하시오
+        let code=1;
+        document.write(code==1 || code==3)
+                //     1    ==1     1   ==3
+                //     true         false
+                //     true
+
+
+
+
+    </script>
+    
+
+
+  </body>
+</html>
