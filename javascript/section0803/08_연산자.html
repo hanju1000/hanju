@@ -52,6 +52,50 @@
 
         //3. 1증감연산자
 
+          // a     'a'
+          //변수    문자상수
+
+
+        let a=3;
+        a=a+1;  //4
+        document.write(a+"<hr>");
+
+        a+=1;   //5
+        document.write(a+"<hr>");
+
+        a++;    //6
+        document.write(a+"<hr>");
+
+        ++a+1   //7
+        document.write(a+"<hr>");
+        document.write("<hr>");
+
+        let b=3;
+        b=b-1;  //2
+        document.write(b+"<hr>");
+        b-=1;   //1
+        document.write(b+"<hr>");
+        b--;    //0
+        document.write(b+"<hr>");
+        --b;    //-1
+        document.write(b+"<hr>");
+        
+
+        //1증감연산자는 다른 게산식과 같이 사용할 경우 주의!!
+        let c=10;
+        let d=20;
+        let i=c++;    //i=c
+                      //c=c+1
+        let j=--d     //d=d-1
+                      //j=d
+        document.write(c+d+i+j);       //11+19+10+19=59
+        document.write("<hr>");
+
+
+      
+
+
+
 
 
     </script>
