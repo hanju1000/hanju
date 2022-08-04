@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8">
-    <title>02_삼형연산자.html</title>
+    <title>03_삼형연산자.html</title>
 
   
   </head>
@@ -28,15 +28,24 @@
             // -5 <0    -5 * -1  
 
     document.write(num+"  절대값:" + result);
-
+    document.write("<hr>");
     //문2) 세개의 수중에서 가장 큰값(최대값)을 구하시오
 
-    let x=7, y=5, z=9
-    let result=(num<num) ? num*10 : num;
+    /*let x=2, y=15, z=9
+    
+    
+    let first=(x<y) ?  y  : x;
+     document.write(first);
+     document.write("<hr>");
+    let last=(first<z) ?  z  : first;  
+     document.write(last)*/
 
-    document.write(num+" 큰값  "+ result);
+     let x=7, y=5, z=9
 
-
+     let max=(x<y)  ?  y : x;
+      max=(max<z) ?  z : max;
+            //7 <9
+    document.write(x + ","+ y +","+ z + "중 최대값 : " + max );
 
 
 
