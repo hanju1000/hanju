@@ -165,6 +165,26 @@
 
 //     3+6+9+12+15+18+21+24 = 108
 
+    let num=0;  //3의 배수
+    let add=0;  //누적의 합
+    let str=""; //출력 결과
+
+    while(true){
+        
+        num=num+3;          //3의 배수
+        add=add+num;
+        // document.write(num + "&nbsp;" + add);
+        // document.write("<hr>");
+        str=str+num+"+"
+        if(add>=100){
+            break;
+        }
+    }//while end
+        document.write(str);
+        document.write("<hr>");
+        document.write("3의 배수의 누적의 합: " + add);
+        document.write("<hr>");
+
 
 
 

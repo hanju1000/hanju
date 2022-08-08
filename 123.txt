@@ -1,0 +1,18 @@
+100+100+100+100
+00m=200m+200m+200m+100m
+	 let x=3;
+  	 let su=10;
+   	 let cnt=0;
+   	 wile(true){    //무한 루프
+     	   su=su-x
+      	 cnt=cnt+1
+        	if(su<0){
+            break;
+        }   //if end
+
+    
+    }//wile end
+
+    document.write("햇수: " + cnt);
+    document.write("<hr>");
+
