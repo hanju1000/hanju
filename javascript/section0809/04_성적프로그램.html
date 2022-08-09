@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+         <meta charset="UTF-8">
+         <title>04_성적프로그램.html</title>
+
+  </head>
+  <body> 
+     
+      <h3>성적 프로그램</h3>
+
+      <script>
+   /*      --------------------------------------------------------
+        이름   국어 영어 수학 평균 등수 결과
+        --------------------------------------------------------
+        무궁화 100  100  100  100  1    합격   ********** 장학생
+        홍길동  20   50   30   33  5    불합격 ***
+        개나리  90   95   90   91  2    합격   *********
+        진달래  70   80   60   70  4    합격   *******
+        라일락  35  100  100   78  3    재시험 *******
+        --------------------------------------------------------    
+     */      
+     let uname= ["라일락","진달래","개나리","무궁화","홍길동"];
+     let kor  = [100, 50, 95, 80, 60];
+     let eng  = [100, 55, 95, 85, 40];
+     let mat  = [100, 60, 35, 90, 30];
+     let size = uname.length //5
+     let aver=[100, 33, 91, 70, 78];
+        document.write(aver);
+
+        switch (parseInt(aver/10)) {
+        case 10:
+        case 9 : grade="A학점"; break;
+        case 8 : grade="B학점"; break;
+        case 7 : grade="C학점"; break;
+        case 6 : grade="D학점"; break;
+        default : grade="F학점"; break;       
+    }
+
+
+
+
+
+        document.write("<hr>");
+        document.write("<br>");
+
+
+        
+      </script>
+  </body>
+</html>
