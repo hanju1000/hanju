@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+        <meta charset="UTF-8">
+        <title>05_디지털시계.html</title>
+
+  </head>
+  <body> 
+    <h3>05_디지털시계</h3>
+    <input type="button" value="시작" onclick="showtime()">
+    <input type="button" value="중지" onclick="killtime()">
+    <hr>
+    
+      
+      <di id="clock"></di>
+      <script>
+        function showtime(){
+        const d=new Date();
+        
+        let today="";
+        today += d.getFullYear() +"."; //2022.
+        
+        if(d.getMonth()+1<10){
+            today += "0";
+        }//if end
+        today += d.getMonth()+1 +".";  //2022.08
+
+        if(d.getDate()<10) {
+            today +="0";
+        }
+        today += d.getDate() ;          //2022.08.10
+
+        switch(d.getDay()){             //2022.08.10 (수)
+                case 0: today+=(" (일) "); break;
+                case 1: today+=("월요일"); break;
+                case 2: today+=("화요일"); break;
+                case 3: today+=(" (수) "); break;
+                case 4: today+=("목요일"); break;
+                case 5: today+=("금요일"); break;
+                case 6: today+=("토요일"); break;
+            }//switch end
+
+        if(d.getHours()<12){
+            today +=" AM ";
+        }else{
+            today += " pm ";                    //2022.08.10 (수) PM
+        }
+
+        if(d.getHours()<13){                                
+            today += d.getHours() + ":";
+        }else{
+            today += d.getHours()-12 + ":"       //2022.08.10 (수) PM 4:
+        }//if end
+
+        if(d.getMinutes()<10){
+            today +="0"                           //2022.08.10 (수) PM 4:55:
+        }//if end
+        today += d.getMinutes()+":";   
+
+        if(d.getSeconds()<10){              
+            today +="0"  
+        }
+
+        
+        today += d.getSeconds();                //2022.08.10 (수) PM 4:55:19
+        document.getElementById("clock").innerText=today
+
+        timer=setTimeout(showtime, 1000); //1초후에 showtime함수를 호출
+    
+    }//showtime() end
+
+
+        let timer; //전역변수
+
+        function killtime(){
+            clearTimeout(timer); //시간 해제
+        }//killtime() end
+
+
+
+
+
+        
+      </script>
+  </body>
+</html>
