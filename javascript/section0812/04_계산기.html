@@ -118,10 +118,35 @@
         }
 
         //9) <- 버튼을 클릭하면 id=result 값에서 마지막 글자쿠터 순서대로 지우기
-        let back;
-        function backspace(back){
-            document.getElementById("result").value = Number(su.substring(su.substring-1)).value += back;
-        }
+        // id=resul값에서 마지막 글자만 제외시키고 다시 대입
+        // 단, 자릿수가 한개인 값은 0으로 대입
+        function backspace(){
+
+            //a)id=result값을 가져와서 글자갯수 출력하기
+            let result=document.getElementById("result").value;
+            // alert(result);
+            // alert(result.length);
+
+            //b)처음글자부터 마지막 글자를 제외식키고 문자열 가져오기(substring())
+            let len=result.length;
+            // alert(result.substring(0, len-1));
+
+            //c)분리된 b)문자열을 다시 id=result에 대입하기
+            // 단, 글자갯수가 1개이면 0으로 다시 대입
+            if(len==1){
+                document.getElementById("result").value=0;
+            }else{
+                document.getElementById("result").value=result.substring(0,len-1);
+            }//if end
+            
+        }//backspace() end
+
+        
+        
+        
+
+
+
 
 
       </script>
