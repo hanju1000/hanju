@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>01_Kakaomap.html</title>
+</head>
+<body>
+    <!-- 참고 https://apis.map.kakao.com/web/guide/ -->
+    <!-- kakao 지도 시작하기-->
+    <!-- 강남 삼원타워 지도 띄우기 -->
+	<div id="map" style="width:500px;height:400px;"></div> <!-- 지도가 나타나느곳  -->
+	<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=0cc66b34df966c34fc036c8445e014cd"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.4988311,127.0318709), //지도의 중심좌표
+			level: 3 //지도의 확대 레벨
+		};
+
+        //지도를 표시할 div 와 지도 옵션으로 지도를 생성합니다
+		var map = new kakao.maps.Map(container, options);
+	</script>
+</body>
+</html>
