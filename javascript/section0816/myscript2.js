@@ -74,11 +74,11 @@ function validate(){
         return false;
     }//if end
 
-    //3)주민번호 앞칸이 숫자형 글자 갯수 6인지 확인하시오
+    //3) 앞칸이 숫자형 글자 갯수 6인지 확인하시오
     let  jumin1=document.getElementById("jumin1").value;
     jumin1=jumin1.trim();
     if(jumin1.length!=6 || isNaN(jumin1)){  //isNaN 숫자기호인지?
-        alert('주민번호(앞칸) 6글자 숫자로 입력해주새요~');
+        alert('(앞칸) 6글자 숫자로 입력해주새요~');
         document.getElementById("jumin1").value="";
         document.getElementById('jumin1').focus();
         return false;
