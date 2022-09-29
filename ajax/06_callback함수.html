@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+        <meta charset="UTF-8">
+        <title>05_성적목록보여주기.html</title>
+        <!-- jQuery import -->
+        <script src="jquery-3.6.1.min.js"></script>
+        <style>
+            #panel{
+                position: absolute;
+                background-color: pink;
+                color: blue;
+                font-size: 35px;
+            }
+
+        </style>
+
+  </head>
+  <body> 
+    <button> * JSON 데이터 받아오기</button>
+    <div id="panel"></div>
+ 
+ 
+    <script>
+
+        $("button").click(function(){
+            // $.getJSON(url, callback함수) JSON 데이트를 가져온다
+            $.getJSON("sungjuks.json", responseProc);
+        });//click end
+         
+        function responseProc(result, status, xhr) {//callback 함수
+            // alert(result);
+            // alert(status);
+            // alert(xhr);
+            let str="<table border='1'>";
+            $.each(result, function(idx, data){
+                str += "<tr>";
+                str += "  <td>" + data.name + "</td>";
+                str += "  <td>" + data.id+ "</td>";
+                str += "  <td>" + data.kor + "</td>";
+                str += "  <td>" + data.eng + "</td>";
+                str += "  <td>" + data.mat + "</td>";
+                str += "</tr>";          
+            }); //each() end
+            str+="</table";
+            $("#panel").empty();
+            $("#panel").append(str);
+
+        }//responseProc() end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+  </body>
+</html>
